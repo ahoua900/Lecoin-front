@@ -1,10 +1,8 @@
 
 header{
 background-color: white;
-position: initial;
 padding: 0.5rem;
-border-top: 5px solid #5d81eb;
-border-bottom: 1px solid #5d81eb;
+border-bottom: 1px solid lightgray;
 }
 .title h1{
 font-size: 45px;
@@ -40,7 +38,7 @@ background-color: rgb(223, 219, 219);
 transition: 0.8s;
 }
 .badge{
-background-color: rgb(25, 218, 232);
+background-color: #5d81eb;
 color: white;
 font-weight: bold;
 }
@@ -112,3 +110,101 @@ padding: 0.6rem;
 color: black;
 font-weight: bold;
 }
+
+section{
+background-color: white;
+margin: 0.7rem;
+}
+.shop{
+position: fixed;
+}
+.shop-check{
+border:1px dotted gray;
+padding: 1rem;
+color:white;
+background-color: #17203a;
+border-radius: 10px;
+}
+.final-shop{
+background-color: #5d81eb;
+padding: 0.7rem;
+text-decoration: none;
+color: white;
+border-radius: 7px;
+margin: 1rem;
+align-content: center;
+}
+.final-shop:hover{
+background-color: rgb(27, 142, 150);
+transition: 0.8s;
+text-decoration: none;
+color: white;
+}
+legend i{
+color: #0d1631;
+padding: 1rem;
+background-color: white;
+border-radius: 100%;
+border: 1.5px solid #0d1631;
+}
+table tbody td{
+font-size: 10px;
+}
+table thead th{
+font-size: 12px;
+}
+.carousel{
+padding: 0.5rem;
+border-radius: 10px;
+height: 500px;
+}
+.carousel-inner{
+border-radius: 10px;
+max-height: 100%;
+}
+.carousel-item{
+border-radius: 10px;
+max-height: 100%;
+}
+.carousel-item img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+.titre-cart{
+font-size: 35px;
+}
+.carts-shopping{
+padding: 0.7rem;
+}
+.cards{
+    margin:0.2rem;
+border-radius: 10px;
+border-color: transparent;
+box-shadow: 1px 1px 5px 1px lightgray;
+}
+.shop-now{
+background-color: #081744;
+border-radius: 50px;
+color: white;
+}
+.shop-now .fa-plus{
+color: white;
+background-color: transparent;
+padding: 0.5rem;
+border-radius: 50px;
+width: 70px;
+margin-left: 2rem;
+}
+.shop-now .fa-shopping-cart{
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 50px;
+    width: 70px;
+    }
+.shop-now i:hover{
+background-color: #0c34ac;
+transition: 1s;
+transform: rotate(360deg);
+}
+
