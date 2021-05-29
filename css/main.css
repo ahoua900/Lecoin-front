@@ -125,12 +125,42 @@ color:white;
 background-color: #17203a;
 border-radius: 10px;
 }
+.btn-login{
+background-color: #5d81eb;
+padding: 0.7rem;
+text-decoration: none;
+color: white;
+border-radius: 50px;
+margin: 0.5rem;
+align-content: center;
+}
+.btn-login:hover{
+background-color: #081744;
+transition: 0.8s;
+text-decoration: none;
+color: white;
+}
+.btn-register{
+background-color: #081744;
+padding: 0.7rem;
+text-decoration: none;
+color: white;
+border-radius: 50px;
+margin: 0.5rem;
+align-content: center;
+}
+.btn-register:hover{
+background-color: #5d81eb;
+transition: 0.8s;
+text-decoration: none;
+color: white;
+}
 .final-shop{
 background-color: #5d81eb;
 padding: 0.7rem;
 text-decoration: none;
 color: white;
-border-radius: 7px;
+border-radius: 50px;
 margin: 1rem;
 align-content: center;
 }
@@ -177,7 +207,7 @@ font-size: 35px;
 padding: 0.7rem;
 }
 .cards{
-    margin:0.2rem;
+    margin:1rem;
 border-radius: 10px;
 border-color: transparent;
 box-shadow: 1px 1px 5px 1px lightgray;
@@ -186,25 +216,166 @@ box-shadow: 1px 1px 5px 1px lightgray;
 background-color: #081744;
 border-radius: 50px;
 color: white;
+display: flex;
 }
-.shop-now .fa-plus{
+.shop-now i{
 color: white;
 background-color: transparent;
 padding: 0.5rem;
 border-radius: 50px;
-width: 70px;
-margin-left: 2rem;
+margin-left: 0.6rem;
 }
-.shop-now .fa-shopping-cart{
-    color: white;
-    background-color: transparent;
-    padding: 0.5rem;
-    border-radius: 50px;
-    width: 70px;
-    }
+
 .shop-now i:hover{
 background-color: #0c34ac;
 transition: 1s;
 transform: rotate(360deg);
+}
+.one-pub{
+background-size: cover;
+background-repeat: no-repeat;
+height: 230px;
+width: 100%;
+margin-bottom:1rem;
+}
+.one-pub-back{
+background-color: rgba(68,68,68,0.53);
+padding: 1.5rem;
+height: 230px;
+width: 100%;
+}
+.pub-text{
+background-color: white;
+padding: 0.5rem;
+}
+/*Formulaires*/
+.content-img{
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100vh;
+
+}
+.content-img-back{
+background-color: rgba(43, 39, 39, 0.6);
+height: 100vh;
+}
+.formulaire-register{
+   
+    border-radius: 7px;
+    margin: 0.5rem;
+    margin-top: 3em;
+    color: #212F3D;
+    border:2px dotted lightgray;
+    background-color: white;
+    }
+    
+.formulaire{
+   
+border-radius: 7px;
+margin: 0.5rem;
+margin-top: 3em;
+width: 350px;
+color: #212F3D;
+border:2px dotted lightgray;
+background-color: white;
+}
+form{
+padding: 1rem;
+}
+.logo-design{
+border-left: 20px solid #0c34ac;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+padding: 5px;
+margin: 1rem;
+}
+.logo-design h4{
+font-weight: bold;
+}
+.logo-design h4 span{
+color: #0c34ac;
+font-size: 40px;
+}
+.logo-designs{
+border-left: 20px solid #0c34ac;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+padding: 5px;
+margin: 1rem;
+}
+.logo-designs h4{
+font-weight: bold;
+color: white;
+}
+.logo-designs h4 span{
+color: #0c34ac;
+font-size: 40px;
+}
+.btn-log{
+background-color: #0c34ac;
+padding: 7px;
+border-radius: 3px;
+color: white;
+border: 2px solid #0c34ac;
+}
+.btn-log:hover{
+transition: .7s;
+background-color: white;
+padding: 7px;
+border: 2px solid #0c34ac;
+border-radius: 3px;
+color: #0c34ac;
+}
+.btn-oub{
+margin-top:1rem;
+}
+.btn-reg{
+font-size: 11px;
+text-align: center;
+}
+anime:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  h4:last-of-type span {
+    margin-left:155px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-10%; }
+      20% { margin-left:10%; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:100px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:100px;}
+  }
+.gere-stock{
+color: white;
+text-align: center;
+padding: 7px;
+}
+.gere-stock p{
+font-size: 11px;
+
 }
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LeCoin - Articles pour tous</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="content-img" style="background-image:url(Images/image_1.jpg)">
+            <div class="container">
+                <div class="form-center row justify-content-center">
+                    <div class="formulaire ">
+                        <div class="anime">
+                            <div class="logo-design">
+                                <h4>Le<span>Coin</span></h4>
+                            </div>
+                        </div>
+                        <h4 class="text-center"><span>Connectez-vous</span></h4>
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <div class="row">
+                                    <i class="col-sm-2 fa fa-user fa-2x"></i>
+                                    <input type="text" class="col-sm-9 form-control" name="Pseudo" placeholder="Email">
+                                </div>
+        
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <i class="col-sm-2 fa fa-key fa-2x"></i>
+                                    <input type="password" class="col-sm-9 form-control" name="MotDePasse" placeholder="Mot de passe">
+                                </div>
+                            </div>
+                           <!-- @if (ViewBag.error != null)
+                            {
+                                <div class="container alert-danger" role="alert">
+                                    <p>Vérifiez vos identifiants</p>
+                                </div>
+                            }
+                            -->
+                        <a href="~/Authentification/Forgot_password">Mot de passe oublié ?</a>
+                            <button type="submit" class="btn-log">connexion</button>
+                        </form>
+                        <p class="btn-reg">Vous n'avez pas de compte ? <a href="register.html" class="btn btn-outline-info">Inscrivez-vous</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LeCoin - Articles pour tous</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="content-img" style="background-image:url(Images/image_5.jpg)">
+            <div class="container">
+                <div class="form-center row justify-content-center">
+                    <div class="formulaire-register">
+                        <div class="anime">
+                            <div class="logo-design">
+                                <h4>Le<span>Coin</span></h4>
+                            </div>
+                        </div>
+                        <h4 class="text-center"><span>Inscription</span></h4>
+                        <p class="btn-reg">Inscrivez-vous et achetez comme toujours</p>
+                      <!--  @if (ViewBag.feli != null)
+                        {
+                            <div class="container alert-success" role="alert">
+                                <h4>Inscription éffectuée</h4>
+                                <p>Vos identifiants sont : </p>
+                                <p>Pseudo : @ViewBag.Pseudo et votre mot de passe choisi</p>
+                                <h6 class="text-center">GoOd Work vous remercie !!!</h6>
+                                <a class="text-center btn btn-outline-success" href="~/Authentification/Login">Connectez-vous</a>
+                            </div>
+                        }
+                        -->
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="Pseudo">Nom  <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="Nom_client">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="Pseudo"> Prénom <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="Prenom_client">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="Pseudo"> Numéro de téléphone<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="Tel_client">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="Pseudo"> Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" name="Email_client">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="Pseudo">Mot de passe <span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" name="MotDePasse">
+                                    </div>
+                                </div>
+        
+                                <button type="submit" class="btn-log">Enregistrer</button>
+                            </form>
+                            <p class="btn-reg">Vous avez déjà de compte ? <a href="login.html" class="btn btn-outline-info">Connectez-vous</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+</body>
+</html>

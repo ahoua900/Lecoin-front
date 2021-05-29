@@ -19,11 +19,11 @@
     <div class="all container-fluid">
         <header>
             <div class="row title-section">
-                <div class="col-sm-3 title">
+                <div class="col-sm-2 title">
                     <h1>Le<span>Coin</span></h1>
                     <p>Achetez avec vos vendeurs d'ici</p>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-10">
                     <div class="options-user row">
                         <div class="col-sm-9">
                             <ul class="menu" id="myTopnav">
@@ -34,10 +34,18 @@
                                 <li><a href="#">Panier <span class="badge">2</span></a></li>
                             </ul>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                    <i class="fa fa-bars fa-2x" id="iconchange"></i>
+                                 <i class="fa fa-bars fa-2x" id="iconchange"></i>
                             </a>
                         </div>
-                        <p class="col-sm-3"><i class="fa fa-user"></i> Ahoua Elvis Ghislain</p>
+                        <div class="col-sm-3">
+                            <div class="row">
+                                    <a class="btn-login" href="login.html">Login </a>
+                                    <a class="btn-register" href="register.html">Register</a>
+                            </div>
+                            
+                        </div>
+                        
+                       <!-- <p class="col-sm-3"><i class="fa fa-user"></i> Ahoua Elvis Ghislain</p> -->
                     </div>
                 </div>
             </div>
@@ -86,7 +94,7 @@
             <!-- Panier d'achat -->
             <div class="col-sm-3 shop">
                 <fieldset class="shop-check">
-                    <legend><i class="fa fa-shopping-cart fa-2x"></i><span class="badge">2</span></legend>
+                    <legend class="animate__animated animate__pulse animate__infinite	infinite"><i class="fa fa-shopping-cart fa-2x"></i><span class="badge">2</span></legend>
                     <h4></h4>
                     <table class="table table-striped">
                             <thead>
@@ -124,9 +132,9 @@
         </section>
          <!-- Partie d'affichage des articles récents -->
          <section class="row">
-            <div class="col-sm-10">
+            <div class="col-sm-9">
                 <div class="carts-shopping">
-                    <h4 class="titre-cart">Produits récents <span class="badge">New</span></h4>
+                    <h4 class="titre-cart">Produits récents <span class="badge animate__animated animate__bounce animate__infinite	infinite">New</span></h4>
                     <div class="row">
                         <!--One card -->
                         <div class="col-sm-3 cards" style="width: 20rem;">
@@ -138,6 +146,7 @@
                                 <div class="shop-now">
                                     <a href="#"><i class="fa fa-plus fa-2x"></i></a>
                                     <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
                                 </div>
                             </div>
                          </div>
@@ -150,6 +159,7 @@
                                 <div class="shop-now">
                                     <a href="#"><i class="fa fa-plus fa-2x"></i></a>
                                     <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -162,6 +172,7 @@
                                 <div class="shop-now">
                                     <a href="#"><i class="fa fa-plus fa-2x"></i></a>
                                     <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -174,13 +185,73 @@
                                 <div class="shop-now">
                                     <a href="#"><i class="fa fa-plus fa-2x"></i></a>
                                     <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 cards" style="width: 20rem;">
+                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                            <div class="card-body">
+                                <h5 class="card-title">Sac de légume</h5>
+                                <span class="badge">15 000FCFA</span>
+                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                <div class="shop-now">
+                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 cards" style="width: 20rem;">
+                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                            <div class="card-body">
+                                <h5 class="card-title">Sac de légume</h5>
+                                <span class="badge">15 000FCFA</span>
+                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                <div class="shop-now">
+                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+                <fieldset class="pub-list">
+                    <legend>
+                        <h4 class="text-center">Savoir plus</h4>
+                    </legend>
+                    <div class="one-pub" style="background-image:url(Images/image_5.jpg)">
+                        <div class="one-pub-back">
+                            <div class="pub-text">
+                                <h4 class="text-center">Service de livraison</h4>
+                                <p class="text-center">Faites vous livré vos produits à domicile à partir de <span class="badge">1000 FCFA</span></p>
+                                <a href="tel://0768466745" class="badge text-center"><i class="fa fa-phone fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-pub" style="background-image:url(Images/image_5.jpg)">
+                        <div class="one-pub-back">
+                            <div class="pub-text">
+                                <h4 class="text-center">Service de livraison</h4>
+                                <p class="text-center">Faites vous livré vos produits à domicile à partir de <span class="badge">1000 FCFA</span></p>
+                                <a href="tel://0768466745" class="badge text-center"><i class="fa fa-phone fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-pub" style="background-image:url(Images/image_5.jpg)">
+                        <div class="one-pub-back">
+                            <div class="pub-text">
+                                <h4 class="text-center">Service de livraison</h4>
+                                <p class="text-center">Faites vous livré vos produits à domicile à partir de <span class="badge">1000 FCFA</span></p>
+                                <a href="tel://0768466745" class="badge text-center"><i class="fa fa-phone fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
          </section>
         
     </div>
