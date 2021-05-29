@@ -3,7 +3,8 @@ header{
 background-color: white;
 position: initial;
 padding: 0.5rem;
-border-bottom: 2px solid #5d81eb;
+border-top: 5px solid #5d81eb;
+border-bottom: 1px solid #5d81eb;
 }
 .title h1{
 font-size: 45px;
@@ -35,8 +36,13 @@ border-radius: 7px;
 font-weight: bold;
 }
 .menu  li a:hover{
-background-color: #5d81eb;
+background-color: rgb(223, 219, 219);
 transition: 0.8s;
+}
+.badge{
+background-color: rgb(25, 218, 232);
+color: white;
+font-weight: bold;
 }
 .icon {
  display: none;
@@ -84,9 +90,9 @@ border-radius: 7px;
 font-weight: bold;
 }
 .responsive li a:hover{
-    background-color: #5d81eb;
-    transition: 0.8s;
-    padding:0.5rem;
+background-color: rgb(223, 219, 219);
+transition: 0.8s;
+padding:0.5rem;
 margin: 0.5rem;
 color: white;
 text-decoration: none;
@@ -103,8 +109,6 @@ border-bottom-right-radius: 10px;
 }
 .options-user p{
 padding: 0.6rem;
-border-bottom: 5px solid #5d81eb;
-border-radius: 10px;
 color: black;
 font-weight: bold;
 }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="main.js"></script>
 </head>
 <body>
@@ -24,9 +25,9 @@
                         <div class="col-sm-9">
                             <ul class="menu" id="myTopnav">
                                 <li><a href="#">Acceuil</a></li>
-                                <li><a href="#">Shop <span class="badge badge-dark">new</span></a></li>
-                                <li><a href="#">Négociations</a></li>
-                                <li><a href="#">Commandes</a></li>
+                                <li><a href="#">Shop <span class="badge">new</span></a></li>
+                                <li><a href="#">Négociations <span class="badge">5</span></a></li>
+                                <li><a href="#">Commandes <span class="badge">2</span></a></li>
                                 <li><a href="#">Blog</a></li>
                             </ul>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -45,10 +46,12 @@
             var y = document.getElementById("iconchange");
             if (x.className === "menu") {
                 x.className = "responsive";
+                
                 y.className = "fa fa-times fa-2x"
             } else {
                 x.className = "menu";
-                y.className = "fa fa-bars fa-2x"
+                y.className = "fa fa-bars fa-2x";
+               
             }
         }
         </script>
