@@ -97,36 +97,36 @@
                     <legend class="animate__animated animate__pulse animate__infinite	infinite"><i class="fa fa-shopping-cart fa-2x"></i><span class="badge">2</span></legend>
                     <h4></h4>
                     <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Article</th>
-                                <th scope="col">Quantité</th>
-                                <th scope="col">Prix</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
-                                <td>Sac de légumes</td>
-                                <td>2</td>
-                                <td>15000 FCFA</td>
-                              </tr>
-                              <tr>
-                               <th scope="row"><img src="Images/blog-5.jpg" height="45" width="45" alt=""></th>
-                                <td>Sac de légumes</td>
-                                <td>2</td>
-                                <td>15000 FCFA</td>
-                              </tr>
-                              <tr>
-                               <th scope="row"><h6> Prix total</h6></th>
-                                <td></td>
-                                <td></td>
-                                <td>30000 FCFA</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        <a class="final-shop" href="#">Finaliser l'achat maintenant</a>
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Article</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                            <td>Sac de légumes</td>
+                            <td>2</td>
+                            <td>15000 FCFA</td>
+                            </tr>
+                            <tr>
+                            <th scope="row"><img src="Images/blog-5.jpg" height="45" width="45" alt=""></th>
+                            <td>Sac de légumes</td>
+                            <td>2</td>
+                            <td>15000 FCFA</td>
+                            </tr>
+                            <tr>
+                            <th scope="row"><h6> Prix total</h6></th>
+                            <td></td>
+                            <td></td>
+                            <td>30000 FCFA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="final-shop" href="#">Finaliser l'achat maintenant</a>
                 </fieldset>
             </div>
         </section>
@@ -134,22 +134,9 @@
          <section class="row">
             <div class="col-sm-9">
                 <div class="carts-shopping">
-                    <h4 class="titre-cart">Produits récents <span class="badge animate__animated animate__bounce animate__infinite	infinite">New</span></h4>
-                    <div class="row">
-                        <!--One card -->
-                        <div class="col-sm-3 cards" style="width: 20rem;">
-                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sac de légume</h5>
-                                <span class="badge">15 000FCFA</span>
-                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
-                                <div class="shop-now">
-                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
-                                </div>
-                            </div>
-                         </div>
+                    <h6 class="titre-cart">Produits récents <span class="badge animate__animated animate__fadeIn animate__infinite infinite">New</span></h6>
+                    <div class="row">                       
+                         <!--Start One card-->
                          <div class="col-sm-3 cards" style="width: 20rem;">
                             <img class="card-img" src="Images/blog-3.jpg" width="100" >
                             <div class="card-body">
@@ -159,64 +146,317 @@
                                 <div class="shop-now">
                                     <a href="#"><i class="fa fa-plus fa-2x"></i></a>
                                     <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                </div>
+                            </div>
+                           <!-- Modal negociation -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                        
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                            <label for="">Proposez votre prix et la quantité</label>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                <td>Sac de légumes</td>
+                                                <td>2</td>
+                                                <td>15000 FCFA</td>
+                                                </tr>
+                                                <form action="">
+                                                    <tr>
+                                                        <td><input type="number" placeholder="1" class="form-control"></td>
+                                                        <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                        <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                    </tr>
+                                                </form>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 cards" style="width: 20rem;">
-                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sac de légume</h5>
-                                <span class="badge">15 000FCFA</span>
-                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
-                                <div class="shop-now">
-                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                        <!--End one card-->
+                         <!--Start One card-->
+                         <div class="col-sm-3 cards" style="width: 20rem;">
+                                <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Sac de légume</h5>
+                                    <span class="badge">15 000FCFA</span>
+                                    <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                    <div class="shop-now">
+                                        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                        <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               <!-- Modal negociation -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <label for="">Proposez votre prix et la quantité</label>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                    <td>Sac de légumes</td>
+                                                    <td>2</td>
+                                                    <td>15000 FCFA</td>
+                                                    </tr>
+                                                    <form action="">
+                                                        <tr>
+                                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                        </tr>
+                                                    </form>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3 cards" style="width: 20rem;">
-                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sac de légume</h5>
-                                <span class="badge">15 000FCFA</span>
-                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
-                                <div class="shop-now">
-                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                            <!--End one card-->
+                             <!--Start One card-->
+                         <div class="col-sm-3 cards" style="width: 20rem;">
+                                <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Sac de légume</h5>
+                                    <span class="badge">15 000FCFA</span>
+                                    <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                    <div class="shop-now">
+                                        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                        <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               <!-- Modal negociation -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <label for="">Proposez votre prix et la quantité</label>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                    <td>Sac de légumes</td>
+                                                    <td>2</td>
+                                                    <td>15000 FCFA</td>
+                                                    </tr>
+                                                    <form action="">
+                                                        <tr>
+                                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                        </tr>
+                                                    </form>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3 cards" style="width: 20rem;">
-                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sac de légume</h5>
-                                <span class="badge">15 000FCFA</span>
-                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
-                                <div class="shop-now">
-                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                            <!--End one card-->
+                             <!--Start One card-->
+                         <div class="col-sm-3 cards" style="width: 20rem;">
+                                <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Sac de légume</h5>
+                                    <span class="badge">15 000FCFA</span>
+                                    <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                    <div class="shop-now">
+                                        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                        <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               <!-- Modal negociation -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <label for="">Proposez votre prix et la quantité</label>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                    <td>Sac de légumes</td>
+                                                    <td>2</td>
+                                                    <td>15000 FCFA</td>
+                                                    </tr>
+                                                    <form action="">
+                                                        <tr>
+                                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                        </tr>
+                                                    </form>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3 cards" style="width: 20rem;">
-                            <img class="card-img" src="Images/blog-3.jpg" width="100" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sac de légume</h5>
-                                <span class="badge">15 000FCFA</span>
-                                <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
-                                <div class="shop-now">
-                                    <a href="#"><i class="fa fa-plus fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                    <a href="#"><i class="fa fa-handshake-o fa-2x"></i></a>
+                            <!--End one card-->
+                             <!--Start One card-->
+                         <div class="col-sm-3 cards" style="width: 20rem;">
+                                <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Sac de légume</h5>
+                                    <span class="badge">15 000FCFA</span>
+                                    <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                    <div class="shop-now">
+                                        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                        <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               <!-- Modal negociation -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <label for="">Proposez votre prix et la quantité</label>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                    <td>Sac de légumes</td>
+                                                    <td>2</td>
+                                                    <td>15000 FCFA</td>
+                                                    </tr>
+                                                    <form action="">
+                                                        <tr>
+                                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                        </tr>
+                                                    </form>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <!--End one card-->
+                             <!--Start One card-->
+                         <div class="col-sm-3 cards" style="width: 20rem;">
+                                <img class="card-img" src="Images/blog-3.jpg" width="100" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Sac de légume</h5>
+                                    <span class="badge">15 000FCFA</span>
+                                    <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                                    <div class="shop-now">
+                                        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                                        <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               <!-- Modal negociation -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <label for="">Proposez votre prix et la quantité</label>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                    <td>Sac de légumes</td>
+                                                    <td>2</td>
+                                                    <td>15000 FCFA</td>
+                                                    </tr>
+                                                    <form action="">
+                                                        <tr>
+                                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                        </tr>
+                                                    </form>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End one card-->
                     </div>
                 </div>
+                <a class="more-btn text-center" href="shop.html">Voir d'autres articles <i class="fa fa-plus"></i></a>
             </div>
             <div class="col-sm-3">
                 <fieldset class="pub-list">
@@ -253,8 +493,59 @@
                 </fieldset>
             </div>
          </section>
-        
+       
     </div>
+    <footer class="footer-img">
+        <div class="form-center row justify-content-center">
+            <div class="col-sm-5 about-us">
+                <h3>A propos de <span class="tit">Le<span class="ti">Coin</span></span></h3>
+                <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+            </div>
+            <div class="col-sm-5 newsletter">
+                <img src="Images/Newsletter.png" alt="">
+                <form action="">
+                    <label class="text-center" for="">Inscrivez-vous à notre newsletter pour ne rien manquer comme articles !</label>
+                    <input type="text" class="form-control" placeholder="Entrez votre email">
+                    <button class="news-btn" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="contact-map col-sm-2">
+                <div class="i-logo">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                </div>
+                <h4>Localisation</h4>
+                <p>Yopougon Abidjan, cote d'ivoire</p>
+            </div>
+            <div class="contact-map col-sm-2">
+                <div class="i-logo">
+                    <i class="fa fa-phone fa-2x"></i>
+                </div>
+                <h4>Téléphone</h4>
+                <a href="tel://0768466745">+225 0768466745</a>
+            </div>
+            <div class="contact-map col-sm-2">
+                <div class="i-logo">
+                    <i class="fa fa-envelope fa-2x"></i>
+                </div>
+                <h4>Email, LeCoin</h4>
+                <a href="mailto:lecoin@gmail.com">lecoin@gmail.com</a>
+            </div>
+        </div>
+        <div class="tot container-fluid">            
+                <div class="container">
+                    <div class="copyrights row">
+                        <div class="copyright col-md-6">
+                            <p> Copyright © 2020 LeCoin tout droits réservés.</p>
+                        </div>
+                        <div class="copyright col-md-5">
+                            <p><a href="#">Termes et conditions d'utilisations | conditions générales </a></p>
+                        </div>
+                    </div>
+                </div>            
+          </div>
+    </footer>
     <script>
     function myFunction() {
             var x = document.getElementById("myTopnav");
