@@ -510,3 +510,64 @@ font-size: 12px;
     .modal{
     margin: 0.8rem;
     }
+    .search-space{
+    display: flex;
+    }
+    .search-input{
+    margin-right:1rem;
+    }
+    marquee{
+    padding: 0.5rem;
+    background-color: #e9e9e9;
+    color: black;
+    border-radius: 7px;
+    }
+    marquee .tit{
+        color: black;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    table tbody tr td a{
+    color: black;
+    border-radius: 7px;
+    padding: 0.3rem;
+    background-color:#e9e9e9;
+    text-decoration: none; 
+    }
+    table tbody tr td a:hover{
+    color: white;
+    background-color: #081744;
+    transition: .5s;
+    text-decoration: none;
+    }
+    .card-add{
+    padding: 0.8rem;
+    }
+    .onecard_add{
+    padding: 0.5rem;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: #e9e9e9;
+    }
+    .onecard_add:hover{
+    text-decoration: none;
+    background-color: #040b21;
+    transition: .5s;
+    color: white;
+    }
+    .onecard_add img{
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 0.8rem;
+    height: 60px;
+    }
+    .checkout{
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    padding: 0.7rem;
+    margin:1.5rem;
+    }
+
