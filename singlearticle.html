@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>LeCoin - Articles pour tous</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+                <link rel="stylesheet" href="css/bootstrap.min.css">
+                <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+              />
+                <script src="main.js"></script>
+            </head>
+<body>
+    <div class="all container-fluid">
+         <header>
+            <div class="row title-section">
+                <div class="col-sm-2 title">
+                    <h1>Le<span>Coin</span></h1>
+                    <p>Négociez et achetez</p>
+                </div>
+                <div class="col-sm-10">
+                    <div class="options-user row">
+                        <div class="col-sm-9">
+                            <ul class="menu" id="myTopnav">
+                                <li><a href="#">Acceuil</a></li>
+                                <li><a href="#">Shop <span class="badge">new</span></a></li>
+                                <li><a href="#">Négociations <span class="badge">5</span></a></li>
+                                <li><a href="#">Commandes <span class="badge">0</span></a></li>
+                                <li><a href="#">Panier <span class="badge">2</span></a></li>
+                            </ul>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                 <i class="fa fa-bars fa-2x" id="iconchange"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row">
+                                    <a class="btn-login" href="login.html">Login </a>
+                                    <a class="btn-register" href="register.html">Register</a>
+                            </div>
+                            
+                        </div>
+                        
+                       <!-- <p class="col-sm-3"><i class="fa fa-user"></i> Ahoua Elvis Ghislain</p> -->
+                    </div>
+                </div>
+            </div>
+        </header> 
+    <div class="content-single">
+         <div class="row">
+            <img src="Images/blog-3.jpg" alt="" class="col-sm-5">
+           
+            <div class="col-sm-6 info-details">
+                <h2>Sacs de légumes</h2>
+                <p>Prix unitaire : <span class="badge">15000 FCFA</span> </p>
+                <div class="btn-single">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-info">Négocier le prix</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-primary">Ajouter au panier</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-danger">Acheter maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <label for="">Proposez votre prix et la quantité</label>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                        <td>Sac de légumes</td>
+                                        <td>15000 FCFA</td>
+                                        </tr>
+                                        <form action="">
+                                            <tr>
+                                                <td><input type="number" placeholder="1" class="form-control"></td>
+                                                <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                            </tr>
+                                        </form>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                             
+                            <h5 class="mb-0">
+                              <button class="btn btn-default" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Savoir plus sur l'article
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   </div>
+                <h4></h4>
+                
+            </div>
+        </div>
+    </div>
+       
+    </div>
+    <script>
+            function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    var y = document.getElementById("iconchange");
+                    if (x.className === "menu") {
+                        x.className = "responsive";
+                        
+                        y.className = "fa fa-times fa-2x"
+                    } else {
+                        x.className = "menu";
+                        y.className = "fa fa-bars fa-2x";
+                       
+                    }
+                }
+            </script>
+</body>
+</html>
