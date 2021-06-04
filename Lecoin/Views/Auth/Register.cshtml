@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutBlanck.cshtml";
+}
+<div class="content-img" style="background-image:url(~/Content/Images/image_5.jpg)">
+    <div class="container">
+        <div class="form-center row justify-content-center">
+            <div class="formulaire-register">
+                <div class="anime">
+                    <div class="logo-design">
+                        <h4>Le<span>Coin</span></h4>
+                    </div>
+                </div>
+                <h4 class="text-center"><span>Inscription</span></h4>
+                <p class="btn-reg">Inscrivez-vous et achetez comme toujours</p>
+                <!--  @if (ViewBag.feli != null)
+                  {
+                      <div class="container alert-success" role="alert">
+                          
+                      </div>
+                  }
+                  -->
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="Pseudo">Nom  <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="Nom_client">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="Pseudo"> Prénom <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="Prenom_client">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="Pseudo"> Numéro de téléphone<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="Tel_client">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="Pseudo"> Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" name="Email_client">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="Pseudo">Mot de passe <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" name="MotDePasse">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-log">Enregistrer</button>
+                </form>
+                <p class="btn-reg">Vous avez déjà de compte ? <a href="~/Auth/Login" class="btn btn-outline-info">Connectez-vous</a></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+

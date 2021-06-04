@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Mes_commandes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>Mes Commandes</h2>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h6>Numéro de commande : </h6>
+                <p>Acheté le : <span class="badge">15 juin 2021</span> </p>
+                <p>A livrer le : <span class="badge">17 juin 2021</span></p>
+                <h5 class="mb-0">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Details de la commande
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4 one-commande">
+                            <div class="commande-details">
+                                <img src="Images/blog-3.jpg" width="150" alt="">
+                                <div class="commande-text">
+                                    <p>Sacs de légumes</p>
+                                    <p>Quantité : 2</p>
+                                    <p class="badge">15000 FCFA</p>
+                                    <p>A livrer à : Marcory</p>
+                                    <button class="btn btn-danger">Non livré</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 one-commande">
+                            <div class="commande-details">
+                                <img src="Images/blog-3.jpg" width="150" alt="">
+                                <div class="commande-text">
+                                    <p>Sacs de légumes</p>
+                                    <p>Quantité : 2</p>
+                                    <p class="badge">15000 FCFA</p>
+                                    <p>A livrer à : Marcory</p>
+                                    <button class="btn btn-success">livré</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+             </div>
+

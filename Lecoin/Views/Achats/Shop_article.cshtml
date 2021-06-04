@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Shop_article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content-single">
+    <div class="row">
+        <img src="Images/blog-3.jpg" alt="" class="col-sm-5">
+
+        <div class="col-sm-6 info-details">
+            <h2>Sacs de légumes</h2>
+            <p>Prix unitaire : <span class="badge">15000 FCFA</span> </p>
+            <div class="btn-single">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-info">Négocier le prix</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-danger">Acheter maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="">Proposez votre prix et la quantité</label>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                        <td>Sac de légumes</td>
+                                        <td>15000 FCFA</td>
+                                    </tr>
+                                    <form action="">
+                                        <tr>
+                                            <td><input type="number" placeholder="1" class="form-control"></td>
+                                            <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                            <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                        </tr>
+                                    </form>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+
+                        <h5 class="mb-0">
+                            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Savoir plus sur l'article
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "All_Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="row">
+    <div class="col-sm-9">
+        <marquee direction="left">Négociez et achetez vos articles avec vos vendeurs habituels sans vous deplacer sur <span class="tit">Le<span class="ti">Coin</span></span></marquee>
+        <div class="carts-shopping">
+            <div class="search-space">
+                <form action="" method="post">
+                    <div class="input-group rounded">
+                        <input type="search" class="col-sm-5 form-control rounded search-input" placeholder="recherchez un article" aria-label="Search"
+                               aria-describedby="search-addon"/>
+                        <select name="" id="" class="col-sm-5 form-control rounded search-input">
+                            <option value="">Vêtements</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <!--Start One card-->
+                <div class="col-sm-3 cards" style="width: 20rem;">
+                    <img class="card-img" src="Images/blog-3.jpg" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sac de légume</h5>
+                        <span class="badge">15 000FCFA</span>
+                        <p style="font-size:13px;font-weight:bold">Vendu par : SAVE ME SHOP</p>
+                        <div class="shop-now">
+                            <a href="#"><i class="fa fa-plus fa-2x"></i></a>
+                            <a href="~/Achats/Shop_article/"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-handshake-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <!-- Modal negociation -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Négociation <i class="fa fa-handshake-o "></i></h3>
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="">Proposez votre prix et la quantité</label>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                                                <td>Sac de légumes</td>
+                                                <td>2</td>
+                                                <td>15000 FCFA</td>
+                                            </tr>
+                                            <form action="">
+                                                <tr>
+                                                    <td><input type="number" placeholder="1" class="form-control"></td>
+                                                    <td><input type="text" placeholder="15000" style="width:100px" class="form-control"></td>
+                                                    <td><button type="submit" class="btn btn-primary">Envoyer</button></td>
+                                                </tr>
+                                            </form>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End one card-->
+            </div>
+        </div>
+    </div>
+    <!--categories liste-->
+    <div class="col-sm-3 shope">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Catégories</th>
+                    <th scope="col">#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Chaussures</a> </td>
+                    <td><a href="#">15</a> </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="card-add">
+            <!-- Autres articles liste-->
+            <h4>Autres articles</h4>
+            <a href="#" class="onecard_add">
+                <img src="Images/blog-3.jpg" alt="">
+
+                <div class="onecard-text">
+                    <h6>Sac de légume</h6>
+                    <span class="badge">15 000FCFA</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+

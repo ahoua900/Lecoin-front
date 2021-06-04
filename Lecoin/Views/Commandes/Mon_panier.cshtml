@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Mon_panier";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="row">
+    <!-- Panier d'achat -->
+    <div class="col-sm-8 checkout">
+        <form action="" method="post">
+            <h4 class="text-center">Résumé de l'achat</h4>
+            <div class="form-group">
+                <label for="">Nom</label>
+                <input type="text" class="form-control" name="Nom" placeholder="votre nom">
+            </div>
+            <div class="form-group">
+                <label for="">Prénoms</label>
+                <input type="text" class="form-control" name="Prenom"  placeholder="votre prénom">
+            </div>
+            <div class="form-group">
+                <label for="">Contact</label>
+                <input type="text" class="form-control" name="Contact"  placeholder="votre contact">
+            </div>
+            <div class="form-group">
+                <label for="">Lieu de livraison</label>
+                <input type="text" class="form-control" name="Lieu"  placeholder="Lieu de livraison">
+            </div>
+            <label for="">Service de livraison ?</label>
+            <select name="Livraison" id="" class="form-control">
+                <option value="">Oui</option>
+                <option value="">Non</option>
+            </select>
+            <button class="news-btn" type="submit">Commander maintenant</button>
+        </form>
+    </div>
+    <div class="col-sm-3 shop">
+        <fieldset class="shop-check">
+            <legend class="animate__animated animate__pulse animate__infinite	infinite"><i class="fa fa-shopping-cart fa-2x"></i><span class="badge">2</span></legend>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Article</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="Images/blog-3.jpg" height="45" width="45" alt=""></th>
+                        <td>Sac de légumes</td>
+                        <td>2</td>
+                        <td>15000 FCFA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</section>
+
