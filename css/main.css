@@ -208,7 +208,9 @@ font-size: 35px;
 padding: 0.7rem;
 }
 .cards{
+background-color: white;
     margin:1rem;
+    color: black;
 border-radius: 10px;
 border-color: transparent;
 box-shadow: 1px 1px 5px 1px lightgray;
