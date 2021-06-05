@@ -17,7 +17,7 @@ namespace Lecoin.DAL
         public DbSet<Information> Informations { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder.UseSqlServer(@"Data Source=winheb02.ikoula.com\MSSQLSERVER2017;Initial Catalog=inapedor_MyDb;Persist Security Info=True;User ID=inapedor_user;Password=Maman68466745@@;TrustServerCertificate=True"));
+            base.OnConfiguring(optionsBuilder.UseSqlServer(@"Data Source=winheb02.ikoula.com\MSSQLSERVER2017;Initial Catalog=inapedor_Lecoin;Persist Security Info=True;User ID=inapedor_user;Password=Maman68466745@@;TrustServerCertificate=True"));
         }
     }
 }
