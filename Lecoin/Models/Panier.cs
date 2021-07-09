@@ -10,8 +10,17 @@ namespace Lecoin.Models
     {
         [Key]
         public int IdPanier { get; set; }
-        public List<Articles> Articles { get; set; }
+        public string NomClient { get; set; }
+        public int IdArticle { get; set; }
+        public string NomArticle { get; set; }
+        public string Categorie { get; set; }
+        public string Description { get; set; }
+        public string NomVendeur { get; set; }
+        public string PhotoArticle { get; set; }
         public int SommeTotale { get; set; }
-        public int NbreArticles { get; set; }
+        public int Quantité { get; set; }
+        public bool IsActif { get; set; }
+       
+
     }
 }

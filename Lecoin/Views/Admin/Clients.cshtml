@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Clients";
+    Layout = "~/Views/Shared/_LayoutBlanck.cshtml";
+}
+@model IEnumerable<Lecoin.Models.Clients>
+<div class="container">
+    <h2>Clients inscrits</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4 one-commande">
+                <p>Nom : @item.Nom_client</p>
+                <p>Prenom : @item.Prenom_client</p>
+                <p>Email : @item.Email_client</p>
+                <p>Numero : @item.Tel_client</p>
+                <a href="~/Admin/DeleteClients/@item.IdClient" class="btn btn-danger"><i class="fa fa-trash fa-2x"></i></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+

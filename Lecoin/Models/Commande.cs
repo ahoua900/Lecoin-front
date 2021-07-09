@@ -11,11 +11,13 @@ namespace Lecoin.Models
         [Key]
         public int IdCommande { get; set; }
         public int IdPanier { get; set; }
+        public string Nomclient { get; set; }
         public string NumeroCommande { get; set; }
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
+        public string NomVendeur { get; set; }
         public string Lieu { get; set; }
         public string Livraison { get; set; }
         public string Contact { get; set; }
+        public bool IsDelivred { get; set; }
+        public DateTime Date { get; set; }
     }
 }

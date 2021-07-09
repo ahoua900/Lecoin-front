@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Lecoin.Models.Clients
+<div class="block">
+    <div class="container-fluid">
+        @if (ViewBag.feli != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Félicitation ! </strong> @ViewBag.feli
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+        <div class="col-12">
+            <div class="simple-card">
+                <div class="simple-card__content">
+
+                    <h2 class="mt-2 --mini">Informations</h2>
+
+                   
+                    <div class="row mt-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mb-4 brb" style="border-bottom: 1px dotted lightgray;">
+                                <h5>Nom:</h5>
+                                <p style="color:#5d81eb">@Model.Nom_client</p>
+                            </div>
+                            <div class="mb-4 brb" style="border-bottom: 1px dotted lightgray;">
+                                <h5>Prénoms:</h5>
+                                <p style="color:#5d81eb">@Model.Prenom_client</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mb-4 brb" style="border-bottom: 1px dotted lightgray;">
+                                <h5>Téléphone:</h5>
+                                <p style="color:#5d81eb">@Model.Tel_client</p>
+                            </div>
+                            <div class="mb-4 brb" style="border-bottom: 1px dotted lightgray;">
+                                <h5>Mail:</h5>
+                                <p style="color:#5d81eb">@Model.Email_client</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <a href="~/Home/LogOut" class="btn btn-danger">Deconnexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simple-card">
+                <div class="simple-card__content">
+
+                    <h2 class="mt-2 --mini">Modifier le mot de passe</h2>
+
+                    <form method="post" class="formular">
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-5">
+                                <label for="mdp">Mot de passe</label>
+                                <input type="text" name="MotDePasse" class="form-control" id="mdp">
+                            </div>
+                            <div class="form-group col-md-6 mb-5">
+                                <label for="mdp2">Confirmer mon mot de passe</label>
+                                <input type="password" name="confMod" class="form-control" id="mdp2">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Modifier
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

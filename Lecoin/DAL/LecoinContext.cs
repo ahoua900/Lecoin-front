@@ -14,6 +14,7 @@ namespace Lecoin.DAL
         public DbSet<Commande> Commandes { get; set; }
         public DbSet<Negociation>  Negociations { get; set; }
         public DbSet<Clients> Clients { get; set; }
+        public DbSet<Categories> Categories { get; set; }
         public DbSet<Information> Informations { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

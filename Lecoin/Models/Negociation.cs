@@ -10,12 +10,15 @@ namespace Lecoin.Models
     {
         [Key]
         public int IdNegociation { get; set; }
+        public int IdArticle { get; set; }
+        public string NomClient { get; set; }
         public string NomArticle { get; set; }
-        [Required(ErrorMessage = "Entrez le prix de l'article s'il vous plait")]
-        public string Prix { get; set; }
-        [Required(ErrorMessage = "Entrez votre proposition s'il vous plait")]
-        public string PrixPropose { get; set; }
-        [Required(ErrorMessage = "Entrez la photo de l'article s'il vous plait")]
-        public string PhotoArticle { get; set; }
+        public string NomVendeur { get; set; }
+        public int Quantité { get; set; }
+        public int PrixPropose { get; set; }
+        public int PrixNormal { get; set; }
+        public bool Issuccess { get; set; }
+        public DateTime Date { get; set; }
+
     }
 }

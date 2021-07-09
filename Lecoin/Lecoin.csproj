@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.EntityFrameworkCore.Design.3.1.6\build\net461\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.6\build\net461\Microsoft.EntityFrameworkCore.Design.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -60,6 +61,9 @@
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Design.3.1.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
@@ -223,21 +227,38 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AchatsController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CommandesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NegociationsController.cs" />
+    <Compile Include="Controllers\ProfilVendeurController.cs" />
     <Compile Include="DAL\LecoinContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20210617125619_initialmigration.cs" />
+    <Compile Include="Migrations\20210617125619_initialmigration.designer.cs">
+      <DependentUpon>20210617125619_initialmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210617152852_secondmigration.cs" />
+    <Compile Include="Migrations\20210617152852_secondmigration.designer.cs">
+      <DependentUpon>20210617152852_secondmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\LecoinContextModelSnapshot.cs" />
     <Compile Include="Models\Articles.cs" />
+    <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\Clients.cs" />
     <Compile Include="Models\Commande.cs" />
     <Compile Include="Models\Information.cs" />
     <Compile Include="Models\Negociation.cs" />
     <Compile Include="Models\Panier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VM\ComViewModel.cs" />
+    <Compile Include="VM\HomeViewModel.cs" />
+    <Compile Include="VM\NegoViewModel.cs" />
+    <Compile Include="VM\ShopViewModel.cs" />
+    <Compile Include="VM\VendeurVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -257,14 +278,17 @@
     <Content Include="Content\Images\blog-3.jpg" />
     <Content Include="Content\Images\blog-4.jpg" />
     <Content Include="Content\Images\blog-5.jpg" />
+    <Content Include="Content\Images\blogs.jpg" />
     <Content Include="Content\Images\image_1.jpg" />
     <Content Include="Content\Images\image_3.jpg" />
     <Content Include="Content\Images\image_5.jpg" />
+    <Content Include="Content\Images\lecoinlogo.png" />
     <Content Include="Content\Images\Newsletter.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="PhotosArticle\blog-4.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\font-awesome\.DS_Store" />
@@ -281,6 +305,7 @@
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\lecoin.inaped.org - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -317,12 +342,16 @@
     <Content Include="Views\Negociations\Mes_negociations.cshtml" />
     <Content Include="Views\Commandes\Mes_commandes.cshtml" />
     <Content Include="Views\Home\Mes_annonces.cshtml" />
+    <Content Include="Views\Admin\Clients.cshtml" />
+    <Content Include="Views\Admin\Paniers.cshtml" />
+    <Content Include="Views\Home\Profil.cshtml" />
+    <Content Include="Views\Commandes\Resume_achat.cshtml" />
+    <Content Include="Views\ProfilVendeur\Vendeur.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Api\" />
     <Folder Include="App_Data\" />
     <Folder Include="ImageInfo\" />
-    <Folder Include="PhotosArticle\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -371,6 +400,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.0.19235.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.1.0.19235.1\build\net46\Microsoft.Data.SqlClient.SNI.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.6\build\net461\Microsoft.EntityFrameworkCore.Design.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.EntityFrameworkCore.Design.3.1.6\build\net461\Microsoft.EntityFrameworkCore.Design.props'))" />
   </Target>
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.0.19235.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.0.19235.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

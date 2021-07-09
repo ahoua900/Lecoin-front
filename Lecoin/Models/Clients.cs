@@ -12,6 +12,8 @@ namespace Lecoin.Models
         public int IdClient { get; set; }
         [Required(ErrorMessage ="Entrez votre nom s'il vou plait")]
         public string Nom_client { get; set; }
+        [Required(ErrorMessage = "Entrez votre pseudo s'il vou plait")]
+        public string Pseudo_Client { get; set; }
         [Required(ErrorMessage = "Entrez votre Prenom s'il vou plait")]
         public string Prenom_client { get; set; }
         [Required(ErrorMessage = "Entrez votre contact s'il vou plait")]

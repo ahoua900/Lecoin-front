@@ -13,8 +13,10 @@ namespace Lecoin.Models
         [Required(ErrorMessage ="Entrez le nom de l'article s'il vous plait")]
         public string NomArticle { get; set; }
         [Required(ErrorMessage = "Entrez le prix de l'article s'il vous plait")]
-        public string Prix { get; set; }
-        [Required(ErrorMessage = "Entrez la description de l'article s'il vous plait")]
+        public int Prix { get; set; }
+        [Required(ErrorMessage = "Entrez le prix de l'article s'il vous plait")]
+        public string Categorie { get; set; }
+        [Required(ErrorMessage = "Entrez la catégorie de l'article s'il vous plait")]
         public string Description { get; set; }
         [Required(ErrorMessage = "Entrez le nom du vendeur de l'article s'il vous plait")]
         public string NomVendeur { get; set; }
@@ -22,5 +24,6 @@ namespace Lecoin.Models
         public string PhotoArticle { get; set; }
         [Required(ErrorMessage = "Entrez la quantité disponible de l'article s'il vous plait")]
         public int QuantitéDispo { get; set; }
+        public DateTime Date { get; set; }
     }
 }
